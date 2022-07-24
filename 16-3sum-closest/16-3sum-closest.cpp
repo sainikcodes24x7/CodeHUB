@@ -15,9 +15,9 @@ public:
                     e--;
                 else
                     s++;
-                //if(abs(curr-target)<abs(res-target))
-                  //  res=curr;
-                 res=(abs(curr-target)<abs(res-target))?curr:res;
+                if(abs(curr-target)<abs(res-target))
+                   res=curr;
+                 //res=(abs(curr-target)<abs(res-target))?curr:res;
             }
         }
         return res;
