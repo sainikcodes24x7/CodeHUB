@@ -2,28 +2,17 @@ class Solution {
 public:
     int maxProfit(vector<int>& arr) {
         int n=arr.size();
-        vector<int>pref(n);
-        vector<int>suffix(n);
-        
-        int bestsell=arr[0];
-        for(int i=1;i<arr.size();i++)
+        int dp[3][n];
+        memset(dp,0,sizeof(dp));
+        for(int i=1;i<=2;i++)
         {
-            bestsell=min(bestsell,arr[i]);
-            pref[i]=max(pref[i-1],arr[i]-bestsell);
+            int maxdiff=INT_MIN;
+            for(int j=1;j<n;j++)
+                {
+                    maxdiff=max(maxdiff,dp[i-1][j-1]-arr[j-1]);
+                    dp[i][j]=max(maxdiff+arr[j],dp[i][j-1]);
+                }
         }
-        
-        bestsell=arr[n-1];
-        for(int i=n-2;i>=0;i--)
-        {
-            bestsell=max(bestsell,arr[i]);
-            suffix[i]=max(suffix[i+1],bestsell-arr[i]);
-        }
-        
-        int ans=0;
-        for(int i=0;i<n;i++)
-        {
-            ans=max(ans,pref[i]+suffix[i]);
-        }
-        return ans;
+        return dp[2][n-1];
     }
 };
