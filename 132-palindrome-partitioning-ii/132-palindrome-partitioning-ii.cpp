@@ -43,7 +43,8 @@ public:
                 ans=min(ans,total);
             }
         }
-        return dp[i]=ans;
+        dp[i]=ans;
+        return ans;
     }
     int minCut(string s) {
         int n=s.length();
