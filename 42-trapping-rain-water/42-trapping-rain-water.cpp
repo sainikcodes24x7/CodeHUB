@@ -19,8 +19,7 @@ public:
         {
             right[i]=max(right[i+1],height[i]);
         }
-       // reverse(right.begin(),right.end());
-        //int c=left.size();
+       
         int sum=0;
         for(int i=0;i<n;i++)
         {
