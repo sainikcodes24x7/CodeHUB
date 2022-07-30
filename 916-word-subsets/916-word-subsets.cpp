@@ -1,62 +1,37 @@
 class Solution {
 public:
-   void maxFreq(string s, vector<int> &rep){
-    
-    vector<int> freq(26,0);
-    
-    for(int i=0; i<s.size(); i++){
-        freq[s[i]-'a']++;
-    }
-    
-    for(int i=0; i<26; i++){
-        rep[i] = max(rep[i], freq[i]);
-    }
-    
-}
-
-bool check(string s, vector<int> rep){
-    
-    
-    vector<int> freq(26,0);
-    
-    for(int i=0; i<s.size(); i++){
-        freq[s[i]-'a']++;
-    }
-    
-    
-    for(int i=0; i<26; i++){
+    vector<string> wordSubsets(vector<string>& words1, vector<string>& words2) {
+        vector<string>ans;
+        int n1=words1.size();
+        int n2=words2.size();
         
-        if(rep[i] > freq[i]) return false;
-        
+        int max_cnt[26]={0};
+        for(auto wrd:words2)
+        {
+            int max2[26]={0};
+            for(auto c:wrd){
+            int x=c-'a';
+            max2[x]++;
+            max_cnt[x]=max(max_cnt[x],max2[x]);
+            }
+        }
+        for(auto w1:words1)
+        {
+            int max1[26]={0};
+            for(auto c:w1){
+            int x=c-'a';
+            max1[x]++;
+            }
+            int i;
+            for(i=0;i<26;i++)
+            {
+                if(max1[i]<max_cnt[i])
+                    break;
+            }
+            if(i==26)
+                ans.push_back(w1);
+            
+        }
+        return ans;
     }
-    
-    
-    return true;
-    
-}
-
-
-vector<string> wordSubsets(vector<string>& word1, vector<string>& word2) {
-    
-    
-    vector<int> rep(26,0);
-    int n2 = word2.size();
-    vector<string> res;
-    int n1 = word1.size();
-    
-    for(int i=0; i<n2; i++){
-        maxFreq(word2[i], rep);
-    }
-    
-    
-    for(int i=0; i<n1; i++){
-        
-        if(check(word1[i], rep)) res.push_back(word1[i]);
-        
-    }
-    
-    
-    return res;
-    
-}
 };
