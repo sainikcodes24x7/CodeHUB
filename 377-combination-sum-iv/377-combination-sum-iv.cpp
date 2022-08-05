@@ -1,10 +1,13 @@
+#include<cstring>
 class Solution {
 public:
-    vector<int> dp;
-   Solution() {
+    vector<int>dp;
+   
+   /*Solution() {
         dp.resize(1001);
         fill(dp.begin(), dp.end(), -1);
     }
+    */
     int helper(vector<int>& nums, int target, int cursum)
     {
         if(cursum>target)
@@ -29,6 +32,7 @@ public:
         //dp.resize(1001);
         //fill(dp.begin(), dp.end(), -1);
         //memset(dp,-1,sizeof(dp));
+        dp.resize(target+1,-1);
         int currentsum=0;
         return helper(nums,target,currentsum);
     }
