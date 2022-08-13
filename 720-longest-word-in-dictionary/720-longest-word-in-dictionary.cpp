@@ -15,7 +15,7 @@ public:
     string longestWord(vector<string>& words) {
         int n=words.size();
         unordered_set<string>st(words.begin(),words.end());
-        int maxcnt=-1;
+        int maxcnt=INT_MIN;
         string str="";
         sort(words.begin(),words.end());
         for(int i=0;i<n;i++)
