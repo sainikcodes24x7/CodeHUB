@@ -11,18 +11,20 @@
  */
 class Solution {
 public:
-    void helper(TreeNode* root, int prev, int &c)
+    void helper(TreeNode* root, int prev, int &count)
     {
         if(!root)
             return;
         if(root->val>=prev)
-            c++;
-        helper(root->left,max(prev,root->val),c);
-        helper(root->right,max(prev,root->val),c);
+            count++;
+        helper(root->left,max(root->val,prev),count);
+        helper(root->right,max(root->val,prev),count);
     }
     int goodNodes(TreeNode* root) {
-        int c=0;
-        helper(root,root->val,c);
-        return c;
+        if(!root)
+            return -1;
+        int count=0;
+        helper(root,root->val,count);
+        return count;
     }
 };
