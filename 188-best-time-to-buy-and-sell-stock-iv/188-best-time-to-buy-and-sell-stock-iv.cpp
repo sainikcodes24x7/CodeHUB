@@ -1,20 +1,16 @@
 class Solution {
 public:
     int maxProfit(int k, vector<int>& prices) {
-        int n=prices.size();
-        if(k==0 or n==0)
-            return 0;
-        int dp[k+1][n];
-        memset(dp,0,sizeof(dp));
-        for(int i=1;i<=k;i++)
+        vector<int>dp(2*k+1, INT_MIN);
+        dp[0]=0;
+        for(int i=0;i<prices.size();i++)
         {
-            int maxdiff=INT_MIN;
-            for(int j=1;j<n;j++)
+            for(int j=0;j+2<=2*k;j+=2)
             {
-                maxdiff=max(maxdiff,dp[i-1][j-1]-prices[j-1]);
-                dp[i][j]=max(prices[j]+maxdiff,dp[i][j-1]);
+                dp[j+1]=max(dp[j+1],dp[j]-prices[i]);
+                dp[j+2]=max(dp[j+2],dp[j+1]+prices[i]);
             }
         }
-        return dp[k][n-1];
+        return *max_element(dp.begin(),dp.end());
     }
 };
