@@ -1,35 +1,38 @@
 class Solution {
 public:
-    bool isPalin(int start, string s, int end)
-{
-    while(start<end)
+    bool isPalin(int start, int end, string s)
     {
-        if(s[start++]!=s[end--])
-            return false;
-    }
-    return true;
-}
-    void helper(int i, string &s, vector<string>&temp, vector<vector<string>>&ans)
-{
-    if(i==s.size())
-    {
-        ans.push_back(temp);
-        return;
-    }
-    for(int itr=i;itr<s.size();itr++)
-    {
-        if(isPalin(i,s,itr))
+        while(start<end)
         {
-            temp.push_back(s.substr(i,itr-i+1));
-            helper(itr+1,s,temp,ans);
-            temp.pop_back();
+            if(s[start]!=s[end])
+                return false;
+            start++;
+            end--;
+        }
+        return true;
+    }
+    void helper(int index, vector<string>&temp, string &s, vector<vector<string>>&ans)
+    {
+        if(index==s.size())
+        {
+            ans.push_back(temp);
+            return;
+        }  
+        for(int i=index;i<s.size();i++)
+        {
+            if(isPalin(index,i,s))
+            {
+                temp.push_back(s.substr(index,i-index+1));
+                helper(i+1,temp,s,ans);
+                temp.pop_back();
+            }
         }
     }
-}
     vector<vector<string>> partition(string s) {
+        int n=s.length();
         vector<vector<string>>ans;
-    vector<string>temp;
-    helper(0,s,temp,ans);
-    return ans;
+        vector<string>temp;
+        helper(0,temp,s,ans);
+        return ans;
     }
 };
