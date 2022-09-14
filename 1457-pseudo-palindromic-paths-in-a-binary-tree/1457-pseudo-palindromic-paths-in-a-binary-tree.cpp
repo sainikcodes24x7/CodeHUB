@@ -11,34 +11,36 @@
  */
 class Solution {
 public:
-    void rec(TreeNode* root) {
-        if (!root)
-            return;
-        
-        m[root->val]++;
-        
-        // If we got to a leaf - check if the path can be a polindrome
-        if (!root->left && !root->right) {
-            int odd = 0;
-            for (auto a : m)
-                if (a.second % 2 == 1)
-                    odd++;
-
-            if (odd <= 1)
-                res++;
+    int ans=0;
+    void helper(TreeNode* root, set<int>s)
+    {
+        if(s.find(root->val)!=s.end())
+        {
+            s.erase(root->val);
         }
-        
-        rec(root->left);
-        rec(root->right);
-        m[root->val]--;
+        else
+        {
+            s.insert(root->val);
+        }
+        if(!root->left and !root->right)
+        {
+            if(s.size()<=1)
+            {
+                ans++;
+            }
+            return;
+        }
+        if(root->left)
+            helper(root->left,s);
+        if(root->right)
+            helper(root->right,s);
     }
-    
     int pseudoPalindromicPaths (TreeNode* root) {
-        rec(root);
-        return res;
+        if(!root)
+            return 0;
+        set<int>s;
+        
+        helper(root,s);
+        return ans;
     }
-    
-private:
-    int res = 0;
-    unordered_map<int, int> m;
 };
