@@ -2,7 +2,7 @@
 
 Create your first Pull Request 🔥(PR) and help contributing to open-source and help everyone with this repository.
 
-Before Contributing to the Repository, Please <a href="https://github.com/sainik-khaddar">FOLLOW ME<img  src="https://img.shields.io/static/v1?label=<LABEL>&message=FOLLOW&color=brightgreen"  />
+Before Contributing to the Repository, Please <a href="https://github.com/sainik-khaddar" aria-label="Follow @sainik-khaddar on GitHub"><img  src="https://img.shields.io/static/v1?label=FOLLOW&message=SAINIK&color=brightgreen"  />
 </a>
 
 GO THROUGH THIS TO KNOW HOW TO CONTRIBUTE TO HACKTOBERFEST
@@ -29,8 +29,9 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 ***
 
 ## Our Awesome contributors 🤩:
-<<a href="https://github.com/Korak-Sengupta/MY-LEETCODE-SOLUTIONS/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Korak-Sengupta/MY-LEETCODE-SOLUTIONS" />
+<<a href="https://github.com/sainik-khaddar/MY-LEETCODE-SOLUTIONS/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sainik-khaddar/MY-LEETCODE-SOLUTIONS" />
+  
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
