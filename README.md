@@ -2,7 +2,7 @@
 
 Create your first Pull Request 🔥(PR) and help contributing to open-source and help everyone with this repository.
 
-Before Contributing to the Repository, Please <a href="https://github.com/sainik-khaddar">STAR MY REPO<img  src="https://img.shields.io/static/v1?label=<LABEL>&message=FOLLOW&color=brightgreen"  />
+Before Contributing to the Repository, Please <a href="https://github.com/sainik-khaddar">FOLLOW ME<img  src="https://img.shields.io/static/v1?label=<LABEL>&message=FOLLOW&color=brightgreen"  />
 </a>
 
 GO THROUGH THIS TO KNOW HOW TO CONTRIBUTE TO HACKTOBERFEST
