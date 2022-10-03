@@ -29,7 +29,7 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 ***
 
 ## Our Awesome contributors 🤩:
-<<a href="https://github.com/sainik-khaddar/MY-LEETCODE-SOLUTIONS/graphs/contributors">
+<a href="https://github.com/sainik-khaddar/MY-LEETCODE-SOLUTIONS/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=sainik-khaddar/MY-LEETCODE-SOLUTIONS" />
   
 </a>
