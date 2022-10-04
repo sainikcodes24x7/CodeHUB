@@ -1,4 +1,4 @@
-# Hacktoberfest 2022 `OPEN FIRST` Pull Request - `FREE T-SHIRT`, `STICKERS` and `GOODIES`🎉
+# Hacktoberfest 2022 `OPEN YOUR FIRST` Pull Request - `FREE T-SHIRT`, `STICKERS` and `GOODIES`🎉
 ![Hacktoberfest 2021](static/logo.png)
 
 # HacktoberFest- Contribute to Open-Source.
@@ -24,36 +24,35 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 
 </div>
 
-Create your first Pull Request 🔥(PR) and help contributing to open-source and help everyone with this repository.
+Create your first Pull Request 🔥(PR) and contribute to Open source softwares.
 
 Before Contributing to the Repository, Please <a href="https://github.com/sainik-khaddar" aria-label="Follow @sainik-khaddar on GitHub"><img  src="https://img.shields.io/static/v1?label=FOLLOW&message=SAINIK&color=brightgreen"  />
 </a>
 
-GO THROUGH THIS TO KNOW HOW TO CONTRIBUTE TO HACKTOBERFEST
+GO THROUGH THe INSTRUCTIONS TO KNOW HOW TO CONTRIBUTE TO HACKTOBERFEST
 
 
 # 👍 Awesome! How and What can I Contribute? 
-It's very easy. Follow the below steps you need to create your -(maybe)- EXAMPLE first pull request.
-1. Fork this repository by click the Fork button in the top right of this page or simply [click here](https://github.com/sainik-khaddar/MY-LEETCODE-SOLUTIONS/fork).
-2. Create a new file and **add** a new Program code(like C++ program to implement Djikstra,Quick Sort etc.) in any programming language like C++, Java, Python, etc. (Note: Program must not be exist already in this repository)
-4. After adding the code, Commit your changes.
-5. Create a new pull request from your forked repository (Button located at the top of your repo)
-6. Star this repository!
-7.YOUR PR WILL BE MERGED INSTANTLY AND WE'LL GIVE "HACKTOBER FEST" BADGE
+It's very easy. Follow the below steps to create your -(maybe)- EXAMPLE first pull request.
+1. Fork this repository by clickING the Fork button in the top right of this page or simply [click here](https://github.com/sainik-khaddar/MY-LEETCODE-SOLUTIONS/fork).
+2. Create a new file and **add** a new Program code (like C++ program to implement Dijkstra's algorithm, Quick Sort Algorithm, and so on) in any programming language like C++, Java, Python, etc.  (Note: The program must not exist already in this repository)
+3. After adding the code, Commit your changes.
+4. Create a new pull request from your forked repository (Button located at the top of your repo)
+5. Star this repository!
+6. YOUR PR WILL BE MERGED INSTANTLY AND WE'LL GIVE "HACKTOBER FEST" BADGE
 
 
 
-## 8. Celebrate - you've done your first pull request!!!!!
+## 7. Celebrate - you've done your first pull request!!!!!
 
 ```py
 '''
-Always make more then 4 pull requests.
-Lets say you have made only 4 pull request to different projects,
-but one project is excluded from hackoctoberfest event then your pull request will not be counted and 
-then you have remaining 3 valid pull requests if these projects is not excluded.
-If you fail to make 4 pull requests then you can't get swags or t-shirts.
-I will recommend you to make pull request to your own repo which is very very safest side for you..
-keep in mind that repo has hacktoberfest topic..
+Always make more than 4 pull requests.
+Let's say, you have made only 4 pull requests to different projects,
+but one of them got excluded from hackoctoberfest event. Then, your pull request is no longer counted and you have remaining 3 valid pull requests (if these projects are not excluded).
+If you fail to make a total of 4 pull requests then you can't get swags or t-shirts.
+I will recommend you to make pull requests to your own repository, which is the safest option for you..
+Make sure that the repo has hacktoberfest topic..
 '''
 ```
 
@@ -66,7 +65,6 @@ To get approval of the pull request much quicker and faster (`Follow Me`)🚀
 ```
 
 <tr><td align="center"><a href="https://github.com/sainik-khaddar"><kbd><img src="https://avatars3.githubusercontent.com/sainik-khaddar?size=100" width="100px;" alt=""/></kbd><br /><sub><b>Sainik Khaddar</b></sub></a><br /></td>
-
 </tr>
 
 ### Please show some love 😄 
@@ -83,7 +81,5 @@ To get approval of the pull request much quicker and faster (`Follow Me`)🚀
    <img src="https://contributors-img.web.app/image?repo=sainik-khaddar/MY-LEETCODE-SOLUTIONS&max=500" />
   <!-- <img src="https://contrib.rocks/image?repo=Korak-Sengupta/MY-LEETCODE-SOLUTIONS" /> -->
 </a>
-
-Made with [contrib.rocks](https://contrib.rocks).
 
 -Happy programming:D
