@@ -77,7 +77,7 @@ To get approval of the pull request much quicker and faster (`Follow Me`)🚀
 ***
 
 ## Our Awesome contributors 🤩:
-<<a href="https://github.com/sainik-khaddar/MY-LEETCODE-SOLUTIONS/graphs/contributors">
+<a href="https://github.com/sainik-khaddar/MY-LEETCODE-SOLUTIONS/graphs/contributors">
    <img src="https://contributors-img.web.app/image?repo=sainik-khaddar/MY-LEETCODE-SOLUTIONS&max=500" />
   <!-- <img src="https://contrib.rocks/image?repo=Korak-Sengupta/MY-LEETCODE-SOLUTIONS" /> -->
 </a>
