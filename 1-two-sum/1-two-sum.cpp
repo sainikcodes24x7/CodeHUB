@@ -9,6 +9,7 @@ public:
         {
             if(mpp.find(target-nums[i])!=mpp.end()) 
                {
+                // if target-nums[i] is not present then we will add it into map
                    ans.push_back(mpp[target-nums[i]]);
                    ans.push_back(i);
                    return ans;
