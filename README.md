@@ -18,7 +18,7 @@ It's very easy. Follow the below steps you need to create your -(maybe)- EXAMPLE
 7.YOUR PR WILL BE MERGED INSTANTLY AND WE'LL GIVE "HACKTOBER FEST" BADGE
 
 ### Please show some love 😄 
-<a href="https://github.com/sainik-khaddar" aria-label="Follow @sainik-khaddar on GitHub"><img  src="https://img.shields.io/badge/Follow👉-@sainik-khaddar-pink?style=for-the-badge"  />
+<a href="https://github.com/sainik-khaddar" aria-label="Follow @sainik-khaddar on GitHub"><img  src="https://img.shields.io/badge/Follow@sainik-khaddar-pink?style=for-the-badge"  />
 </a>
 <br>
 ## What is Hacktoberfest?
@@ -29,7 +29,7 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 ***
 
 ## Our Awesome contributors 🤩:
-<<a href="https://github.com/sainik-khaddar/MY-LEETCODE-SOLUTIONS/graphs/contributors">
+<a href="https://github.com/sainik-khaddar/MY-LEETCODE-SOLUTIONS/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=sainik-khaddar/MY-LEETCODE-SOLUTIONS" />
   
 </a>
