@@ -1,4 +1,4 @@
-# Hacktoberfest 2022 `OPEN FIRST` Pull Request - `FREE T-SHIRT`🎉
+# Hacktoberfest 2022 `OPEN FIRST` Pull Request - `FREE T-SHIRT`, `STICKERS` and `GOODIES`🎉
 ![Hacktoberfest 2021](static/logo.png)
 
 # HacktoberFest- Contribute to Open-Source.
