@@ -16,8 +16,10 @@ public:
     
     void helper(TreeNode* root, int targetsum, int sum)
     {
-        if(!root)
+        if(root==NULL)
+        {
             return;
+        }
         path.push_back(root->val);
         sum+=root->val;
         
