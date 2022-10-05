@@ -1,0 +1,2 @@
+We will use bfs to solve this problem , we run the loop k times which means for atmost k stops , and we update the cost if
+the node is equal to destination . We keep a queue of pairs where the second element of the pair stores the total cost upto that node .

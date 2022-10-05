@@ -1,0 +1,3 @@
+The approach is very simple , we need to find the number of connected components .
+We can do this by simple dfs , we start with a node and traverse every possible nodes from it .
+When we encounter an unvisited node , we increment the count and run dfs with that node .
