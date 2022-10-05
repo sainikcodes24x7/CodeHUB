@@ -1,8 +1,0 @@
-For a bipartite graph , a very important property is that it must be colourable using 2 colours such that 
-no two adjacent vertices has the same colour . Also , for a graph to be non bipartite , it must have an odd length cycle
-
-We can use any of the above properties to check if the graph is bipartite or not , but for algorithmic simplicity
-we have used the 1st one . We took an initial vertex and coloured it using a colour(1) and did bfs using the 
-initial node  If the child is already coloured and its colour is same as its parent then it is not a bipartite graph .
-Else , fill the child with complement of the parent colour and add it to the bfs queue . Continue this until the queue
-becomes empty .
