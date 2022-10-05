@@ -1,0 +1,3 @@
+The main approach to this problem will be to find the different connected componenets . We need to keep a track 
+of components in which one node belongs . So , a node is unreacheable to all other nodes which belong to different components .
+We will do dfs and keep a visited array , visited[i] will store the component number in which node i belongs .
