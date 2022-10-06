@@ -1,0 +1,3 @@
+The idea is that we maintain a priority queue which stores the points ordered by their distance in the lower 
+ordered and we select any point and we push the distance of its neighbours in that priority queue . We take the 
+top of the queue and repeat the same until we have traversed all the nodes . 
