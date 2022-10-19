@@ -2,8 +2,11 @@ class Solution {
 public:
     static bool comp(pair<int,int>p1,pair<int,int>p2)
     {
+        //If multiple values have the same frequency, sort them in decreasing order
         if(p1.second==p2.second)
             return p1.first>p2.first;
+        
+        //Else sort the array in increasing order based on the frequency of the values
         return p1.second<p2.second;
     }
     vector<int> frequencySort(vector<int>& nums) {
