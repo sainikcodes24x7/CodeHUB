@@ -15,9 +15,7 @@ public:
                 }
             }
         }
-        if(dp[n-1]>=1000000)
-            return -1;
-        else
-        return dp[n-1];
+        return dp[n-1]>=1000000?-1:dp[n-1];
+      
     }
 };
