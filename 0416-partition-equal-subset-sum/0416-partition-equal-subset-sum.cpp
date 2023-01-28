@@ -1,39 +1,27 @@
 class Solution {
 public:
     bool canPartition(vector<int>& nums) {
-        int totsum=0;
+        int sum=0;
         int n=nums.size();
-        for(int i=0;i<n;i++)
+        for(auto itr:nums)
         {
-            totsum+=nums[i];
+            sum+=itr;
         }
-        if(totsum%2==1)
+        if(sum%2!=0)
             return false;
-        else
+        
+        vector<bool>dp(sum/2+1,false);
+        dp[0]=true;
+        int s=0;
+        for(int i=0;i<nums.size();i++)
         {
-            int k=totsum/2;
-            vector<vector<bool>>dp(n,vector<bool>(k+1,false));
-            for(int i=0;i<n;i++)
+            s+=nums[i];
+            for(int j=min(s,sum/2);j>=nums[i];j--)
             {
-                dp[i][0]=true;
+                if(dp[j-nums[i]])
+                    dp[j]=true;
             }
-            if(nums[0]<=k)
-            {
-                dp[0][nums[0]]=true;
-            }
-            for(int i=1;i<n;i++)
-            {
-                for(int j=1;j<=k;j++)
-                {
-                    bool notaken=dp[i-1][j];
-                    bool taken=false;
-                    if(nums[i]<=j)
-                        taken=dp[i-1][j-nums[i]];
-                    
-                    dp[i][j]=notaken||taken;
-                }
-            }
-            return dp[n-1][k];
         }
+        return dp[sum/2];
     }
 };
