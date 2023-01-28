@@ -5,7 +5,7 @@ public:
         vector<int>dp(n,1000000);
         
         dp[0]=0;
-        for(int i=1;i<n;i++)
+        for(int i=1;i<=amount;i++)
         {
             for(int j=0;j<coins.size();j++)
             {
