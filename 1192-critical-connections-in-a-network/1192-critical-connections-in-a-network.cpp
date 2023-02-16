@@ -1,49 +1,38 @@
 class Solution {
 public:
-    vector<vector<int>>res;
-    void dfs(int node, int parent, vector<bool>&vis, vector<int>&time, vector<int>&low, int cnt, vector<vector<int>>&adj)
+    void dfs(int node, int p, vector<int>adj[], int v1[], int v2[], vector<int>&v, vector<vector<int>>&ans, int &cnt)
     {
-        vis[node]=true;
-        time[node]=cnt;
-        low[node]=cnt;
+        v1[node]=cnt;
+        v2[node]=cnt;
+        v[node]=1;
         cnt++;
-        
         for(auto nbr:adj[node])
         {
-            if(nbr==parent)
+            if(nbr==p)
                 continue;
-            if(!vis[nbr])
-                dfs(nbr,node,vis,time,low,cnt,adj);
-            low[node]=min(low[node],low[nbr]);
-            if(low[nbr]>time[node])
+            if(v[nbr])
+                v1[node]=min(v1[node],v1[nbr]);
+            else
             {
-                res.push_back({node,nbr});
+                dfs(nbr,node,adj,v1,v2,v,ans,cnt);
+                v1[node]=min(v1[node],v1[nbr]);
+                if(v1[nbr]>v2[node])
+                    ans.push_back({nbr,node});
             }
-            else{
-                low[node]=min(low[node],time[nbr]);
-            }
-                
         }
-        
     }
     vector<vector<int>> criticalConnections(int n, vector<vector<int>>& connections) {
-        vector<vector<int>>adj(n);
+        vector<int>adj[n];
         for(int i=0;i<connections.size();i++)
         {
             adj[connections[i][0]].push_back(connections[i][1]);
             adj[connections[i][1]].push_back(connections[i][0]);
         }
-        
-        vector<bool>vis(n,false);
-        vector<int>time(n,-1);
-        vector<int>low(n,-1);
-        
-        int cnt=0;
-        for(int i=0;i<n;i++)
-        {
-            if(!vis[i])
-                dfs(i,-1,vis,time,low,cnt,adj);
-        }
-        return res;
+        vector<int>v(n,0);
+        int cnt=1;
+        int v1[n], v2[n];
+        vector<vector<int>>ans;
+        dfs(0,-1,adj,v1,v2,v,ans,cnt);
+        return ans;
     }
 };
