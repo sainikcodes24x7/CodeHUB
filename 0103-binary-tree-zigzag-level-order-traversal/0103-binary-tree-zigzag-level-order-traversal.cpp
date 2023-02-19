@@ -33,9 +33,10 @@ public:
                     q.push(curr->right);
             }
             if(idx++%2)
-            
+            {
                 reverse(v.begin(),v.end());
-                ans.push_back(v);
+            }
+            ans.push_back(v);
             
         }
         return ans;
