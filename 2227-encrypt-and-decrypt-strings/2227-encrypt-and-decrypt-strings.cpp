@@ -25,7 +25,7 @@ public:
         return ans;
     }
     int decrypt(string word2) {
-        return rmap.count(word2)?rmap[word2]:0;
+        return rmap[word2]?rmap[word2]:0;
     }
 };
 
