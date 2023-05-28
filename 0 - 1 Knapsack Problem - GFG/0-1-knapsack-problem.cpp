@@ -23,13 +23,15 @@ class Solution
        {
            ans[0][j]=0;
        }
-       for(int i=1;i<n+1;i++)
+       
+       for(int i=1;i<n+1;i++) //items
        {
-           for(int j=1;j<W+1;j++)
+           for(int j=1;j<W+1;j++) //weight
            {
                if(wt[i-1]<=j){
                
-               ans[i][j]=max(val[i-1]+ans[i-1][j-wt[i-1]],ans[i-1][j]);
+               //ans[i][j]=max(val[i-1]+ans[i-1][j-wt[i-1]],ans[i-1][j]);
+               ans[i][j]=max(ans[i-1][j],val[i-1]+ans[i-1][j-wt[i-1]]);
                    
                }
                else{
