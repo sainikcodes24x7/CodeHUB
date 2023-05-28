@@ -29,7 +29,7 @@ class Solution{
 	int perfectSum(int arr[], int n, int sum)
 	{
         // Your code goes here
-        vector<vector<int>>dp(n,vector<int>(sum+1,-1));
+        vector<vector<int>>dp(n+1,vector<int>(sum+1,-1));
         return solve(arr,n,sum,dp);
 	}
 	  
