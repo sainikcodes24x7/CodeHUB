@@ -8,7 +8,7 @@ class Solution{
 	public:
 	int solve(int arr[],int n, int sum, vector<vector<int>>&dp)
 	{
-	    if(n-1<0)
+	    if(n<=0)
 	        return sum==0;
 	    if(dp[n-1][sum]!=-1)
 	        return dp[n-1][sum];
