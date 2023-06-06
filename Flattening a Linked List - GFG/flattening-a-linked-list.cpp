@@ -115,18 +115,18 @@ Node *flatten(Node *root)
 {
    // Your code here
    multiset<int>st;
-   Node*temp= root; 
- while(temp){
-    Node* curr= temp; 
-    while(curr){
-        st.insert(curr->data);
-        curr= curr->bottom;
-    }
-     temp= temp->next;
- }
-  for(auto it:st){
-      cout<<it<<" ";
-  } 
-  return NULL;
+   Node* temp=root;
+   while(temp){
+       Node* curr=temp;
+        while(curr){
+            st.insert(curr->data);
+            curr=curr->bottom;
+        }
+        temp=temp->next;
+   }
+   for(auto it:st){
+       cout<<it<<" ";
+   }
+   return NULL;
 }
 
