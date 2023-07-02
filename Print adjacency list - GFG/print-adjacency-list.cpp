@@ -10,8 +10,13 @@ class Solution {
         // Code here
         vector<vector<int>>ans;
         for(int i=0;i<V;i++){
-            adj[i].insert(adj[i].begin(),i);
-            ans.push_back(adj[i]);
+            vector<int>temp;
+            temp.push_back(i);
+            int curr=i;
+            for(auto nbr:adj[curr]){
+                temp.push_back(nbr);
+            }
+            ans.push_back(temp);
         }
         return ans;
     }
