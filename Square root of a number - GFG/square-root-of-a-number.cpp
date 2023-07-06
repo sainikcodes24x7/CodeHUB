@@ -20,13 +20,16 @@ class Solution{
         
         while(s<=e){
             lli sq=m*m;
+            
             if(sq==x)
             return m;
+            
             else if(sq<x)
             {
                 ans=m;
                 s=m+1;
             }
+            
             else{
                 e=m-1;
             }
