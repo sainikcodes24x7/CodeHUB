@@ -10,19 +10,19 @@ class Solution {
         // Code here
         queue<int>q;
         vector<int>ans;
-        vector<int>vis(V+1,0);
-        vis[0]=1;
+        vector<bool>vis(V+1,0);
         q.push(0);
-        while(!q.empty()){
-            auto top=q.front();
+        vis[0]=1;
+        while(q.size()!=0){
+            int curr=q.front();
             q.pop();
-            ans.push_back(top);
-            for(auto nbr:adj[top]){
+            for(auto nbr:adj[curr]){
                 if(!vis[nbr]){
                     vis[nbr]=1;
                     q.push(nbr);
                 }
             }
+            ans.push_back(curr);
         }
         return ans;
     }
