@@ -1,15 +1,16 @@
-// { Driver Code Starts
+//{ Driver Code Starts
 #include<bits/stdc++.h>
 using namespace std;
 
 
- // } Driver Code Ends
+// } Driver Code Ends
 class Solution
 {
     public:
     //Function to return max value that can be put in knapsack of capacity W.
     int knapSack(int W, int wt[], int val[], int n) 
     { 
+       // Your code here
        // Your code here
        // we make an 2d vector of n*W
        vector<vector<int>>ans(n+1,vector<int>(W+1));
@@ -44,7 +45,7 @@ class Solution
     }
 };
 
-// { Driver Code Starts.
+//{ Driver Code Starts.
 
 int main()
  {
@@ -73,4 +74,5 @@ int main()
         
     }
 	return 0;
-}  // } Driver Code Ends
+}
+// } Driver Code Ends
