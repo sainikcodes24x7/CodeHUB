@@ -95,30 +95,47 @@ Node* buildTree(string str)
 
 class Solution {
   public:
-    vector <int> bottomView(Node *root) {
-        // Your Code Here
-        map<int,int>mp;
-        queue<pair<Node*,int>>q;
-        q.push({root,0});
-        while(!q.empty()){
-            auto top=q.front();
-            Node* node=top.first;
-            int dis=top.second;
-            q.pop();
-            mp[dis]=node->data;
-            if(node->left){
-                q.push({node->left,dis-1});
-            }
-            if(node->right){
-                q.push({node->right,dis+1});
-            }
+   vector<int> bottomView(Node *root) {
+    // Create a map to store the vertical distance as key and node data as value.
+    map<int, int> mp;
+    
+    // Create a queue for level order traversal.
+    queue<pair<Node*, int>> q;
+    q.push({root, 0});
+    
+    while (!q.empty()) {
+        // Get the front node and its vertical distance.
+        auto top = q.front();
+        Node* node = top.first;
+        int dis = top.second;
+        q.pop();
+        
+        // Update the map with the latest node data for the current vertical distance.
+        mp[dis] = node->data;
+        
+        // Enqueue left child with a decreased vertical distance (dis-1).
+        if (node->left) {
+            q.push({node->left, dis - 1});
         }
-        vector<int>ans;
-        for(auto itr:mp){
-            ans.push_back(itr.second);
+        
+        // Enqueue right child with an increased vertical distance (dis+1).
+        if (node->right) {
+            q.push({node->right, dis + 1});
         }
-        return ans;
     }
+    
+    // Create a vector to store the final bottom view nodes.
+    vector<int> ans;
+    
+    // Traverse the map and add node data to the vector.
+    for (auto itr : mp) {
+        ans.push_back(itr.second);
+    }
+    
+    // Return the vector containing the bottom view nodes.
+    return ans;
+}
+
 };
 
 //{ Driver Code Starts.
