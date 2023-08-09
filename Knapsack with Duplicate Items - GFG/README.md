@@ -1,5 +1,5 @@
 # Knapsack with Duplicate Items
-## Easy
+## Medium
 <div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given a set of <strong>N</strong> items, each with a weight and a value, represented by the array <strong>w[]</strong>&nbsp;and&nbsp;<strong>val[]</strong>&nbsp;respectively.&nbsp;Also, a knapsack with weight limit <strong>W</strong>.<br>
 The task is to fill the knapsack in such a way that we can get the maximum profit. Return the maximum profit.<br>
 Note: Each item can be taken any number of times.</span></p>
